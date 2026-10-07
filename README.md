@@ -14,11 +14,17 @@ Requires Node.js 22.17 or newer.
 
 ```sh
 npm ci
-cp .env.example .env
+npm run setup
 npm start
 ```
 
-On PowerShell use `Copy-Item .env.example .env`. Open **http://127.0.0.1:4318**.
+The setup command works on Windows, macOS and Linux and preserves an existing `.env`. Open **http://127.0.0.1:4318**.
+
+For a five-minute first run, use the calculated preview without credentials, adjust a purchase quantity, and verify that exceeding the budget blocks checkout. This preview is not AI. Connect your own accounts only when testing real AI or PayPal sandbox calls.
+
+## Evidence beyond the demo
+
+Run `npm run evaluate` for a reproducible comparison of the recorded real AI plan against the deterministic reorder baseline. See [results and limitations](evaluation/RESULTS.md) and the [café operator test protocol](evaluation/USER-TEST.md). This comparison does not establish real-world savings or a purchasing advantage from AI. User trials have not yet been conducted.
 
 The calculated preview works without any accounts. It is explicitly labeled **not AI**. Six synthetic café products, their fixed wholesale prices, and fourteen days of sample sales are included. Edit the counts and supplier lead times in Inventory, then save to invalidate old plans.
 

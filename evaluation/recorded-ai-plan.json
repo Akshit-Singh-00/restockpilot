@@ -1,0 +1,169 @@
+{
+  "disclosure": "Synthetic café scenario; one recorded real model response, not a representative performance study.",
+  "model": "gpt-5.6-luna",
+  "generatedAt": "2026-10-07T12:27:24.475Z",
+  "inventory": [
+    {
+      "sku": "OAT-01",
+      "stock": 12,
+      "lead": 3,
+      "sales": [
+        5,
+        6,
+        4,
+        7,
+        6,
+        9,
+        8,
+        6,
+        7,
+        5,
+        8,
+        7,
+        10,
+        9
+      ]
+    },
+    {
+      "sku": "BEAN-02",
+      "stock": 9,
+      "lead": 4,
+      "sales": [
+        2,
+        3,
+        2,
+        3,
+        4,
+        4,
+        3,
+        3,
+        4,
+        3,
+        4,
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "sku": "MATCH-03",
+      "stock": 7,
+      "lead": 5,
+      "sales": [
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "sku": "CUP-04",
+      "stock": 5,
+      "lead": 2,
+      "sales": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "sku": "SYRUP-05",
+      "stock": 18,
+      "lead": 3,
+      "sales": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "sku": "COCOA-06",
+      "stock": 20,
+      "lead": 4,
+      "sales": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "settings": {
+    "budget": 20000,
+    "horizon": 7,
+    "uplift": 25,
+    "note": "A weekend pop-up is expected to increase demand. Prioritize oat milk and coffee service, but explain any stock risks that the $200 budget leaves unresolved."
+  },
+  "advice": {
+    "summary": "Priority order: OAT-01, BEAN-02, MATCH-03, CUP-04, SYRUP-05, COCOA-06. The stated full target cost is $771.00 versus a $200.00 budget, so the application’s round-robin allocation will leave substantial stockout risk unresolved, especially for oat milk and beans.",
+    "caution": "The 25% weekend uplift may make the reported cover optimistic. OAT-01 and BEAN-02 are already projected to run out before supplier lead time; MATCH-03 also has a 5-day lead against 3.9 days of cover. Exact quantities purchased are not determined here.",
+    "priorities": [
+      {
+        "sku": "OAT-01",
+        "reason": "Highest urgency: critical risk, only 1.3 days of cover versus a 3-day lead, highest demand at 8.91/day, and 95 units needed. It also directly matches the stated oat-milk priority."
+      },
+      {
+        "sku": "BEAN-02",
+        "reason": "Critical coffee-service item with 2.1 days of cover versus a 4-day lead, demand of 4.38/day, and 48 units needed. The weekend uplift increases the chance of a near-term stockout."
+      },
+      {
+        "sku": "MATCH-03",
+        "reason": "Critical risk with 3.9 days of cover versus a 5-day lead and the strongest trend at 38%; its lower demand of 1.8/day makes it less urgent than oat milk or beans, but replenishment should begin before the lead-time gap worsens."
+      },
+      {
+        "sku": "CUP-04",
+        "reason": "Important coffee-service packaging with 2.9 days of cover, a short 2-day lead, and watch status. Its 1.73/day usage and 15 units needed justify priority, though the shorter lead reduces immediate urgency versus critical items."
+      },
+      {
+        "sku": "SYRUP-05",
+        "reason": "Healthy stock with 15 days of cover against a 3-day lead, zero units needed, and low demand of 1.2/day; replenishment can be deferred."
+      },
+      {
+        "sku": "COCOA-06",
+        "reason": "Lowest urgency: healthy stock with 18.7 days of cover against a 4-day lead, zero units needed, and low demand of 1.07/day."
+      }
+    ]
+  }
+}
