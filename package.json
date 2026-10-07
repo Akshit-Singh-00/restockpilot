@@ -1,0 +1,19 @@
+{
+  "name": "restockpilot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Inventory signals to reviewed purchasing plans and PayPal sandbox checkout",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.17.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "test": "node --test",
+    "check": "node --check server.mjs && node --check lib/domain.mjs && node --check lib/providers.mjs && node --check lib/stream.mjs && node --check lib/chatgpt.mjs && node --check public/app.js"
+  },
+  "dependencies": {
+    "jose": "6.2.12"
+  }
+}
