@@ -6,7 +6,7 @@ This is a second, separate PayPal AI Hackathon project. Unlike ScopePay’s free
 
 ![RestockPilot dashboard](submission/screenshots/01-overview.png)
 
-[Watch the 2:10 demo](https://youtu.be/yH8ZGAWjhgY) — a captioned walkthrough of actual app screens, the verified AI plan, and the completed PayPal sandbox payment.
+[Watch the narrated live walkthrough](https://youtu.be/fF-ql8vEN98) — a fresh AI request, quantity editing, budget enforcement, and authenticated refresh of an earlier completed sandbox payment. Edited between sections with synthetic narration; no new buyer approval or capture is shown in this recording.
 
 ## Run locally
 
@@ -86,3 +86,4 @@ Automated coverage includes budget and target bounds across thousands of scenari
 `server.mjs` serves the app and coordinates orders. `lib/domain.mjs` owns forecasting and validation. `lib/chatgpt.mjs` handles account consent and token lifecycle. `lib/stream.mjs` consumes structured model responses. `lib/providers.mjs` calls PayPal. `public/` is a dependency-free responsive interface. `data/`, `.env`, and local evidence in `artifacts/` are ignored.
 
 MIT licensed. Authentication and SSE plumbing are adapted from ScopePay; the inventory domain, purchasing UI, allocation logic, and Orders integration are new.
+
