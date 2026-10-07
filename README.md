@@ -6,6 +6,8 @@ This is a second, separate PayPal AI Hackathon project. Unlike ScopePay’s free
 
 ![RestockPilot dashboard](submission/screenshots/01-overview.png)
 
+[Watch the 2:10 demo](https://youtu.be/yH8ZGAWjhgY) — a captioned walkthrough of actual app screens, the verified AI plan, and the completed PayPal sandbox payment.
+
 ## Run locally
 
 Requires Node.js 22.17 or newer.
