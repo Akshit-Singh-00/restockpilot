@@ -4,6 +4,8 @@
 
 This is a second, separate PayPal AI Hackathon project. Unlike ScopePay’s freelancer scope assessment and invoicing, RestockPilot tackles retail inventory and procurement using the PayPal Orders v2 API.
 
+![RestockPilot dashboard](submission/screenshots/01-overview.png)
+
 ## Run locally
 
 Requires Node.js 22.17 or newer.
@@ -64,6 +66,12 @@ npm run check
 ```
 
 Automated coverage includes budget and target bounds across thousands of scenarios, hostile carts, stale inventory, duplicate requests, payment mismatch/pending states, network ambiguity, sandbox-only URLs, OAuth verification, and streamed AI completion. Tests use mocked external services; they do not prove that a new installation has completed a real AI request or sandbox purchase.
+
+**Verified on 7 October 2026:** all 21 automated tests passed. Separately, a real ChatGPT GPT-5.6-Luna request produced priorities for a $200 budget and a $771 full target. A real PayPal sandbox order for one synthetic $2.50 oat-milk carton completed buyer approval and capture; the app confirmed the matching capture through PayPal's authenticated Orders API. A transient pre-capture lookup timeout was reconciled before capture; only one capture was requested.
+
+![Real AI purchasing plan](submission/screenshots/03-ai-plan.png)
+
+![PayPal-confirmed sandbox payment](submission/screenshots/05-paypal-paid.png)
 
 ## Files
 

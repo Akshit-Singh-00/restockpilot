@@ -5,3 +5,6 @@ node_modules/
 data/
 artifacts/
 *.log
+STATUS.md
+DEMO.md
+SUBMISSION.md
